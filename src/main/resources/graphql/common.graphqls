@@ -1,0 +1,11 @@
+schema {
+    query: Query
+}
+
+# Root Query
+type Query {
+    getPost: [Post],
+    getPostById(id: Int!): Post,
+    getComment: [Comment],
+    getCommentByPostId(postId: Int!): [Comment],
+}
