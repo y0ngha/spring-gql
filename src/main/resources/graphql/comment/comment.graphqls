@@ -5,3 +5,9 @@ type Comment {
     email: String!,
     body: String!,
 }
+
+input IComment {
+    name: String!,
+    email: String!,
+    body: String!,
+}

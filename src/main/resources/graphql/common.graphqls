@@ -1,5 +1,6 @@
 schema {
-    query: Query
+    query: Query,
+    mutation: Mutation
 }
 
 # Root Query
@@ -8,4 +9,15 @@ type Query {
     getPostById(id: Int!): Post,
     getComment: [Comment],
     getCommentByPostId(postId: Int!): [Comment],
+}
+
+# Root Mutation
+type Mutation {
+    insertPost(post: IPost!): Boolean,
+    insertPostAfterView(post: IPost!): Post,
+    deletePostById(id: Int!): Boolean,
+
+    deleteCommentByPostId(postId: Int!): Boolean
+    deleteCommentById(id: Int): Boolean,
+    insertComment(postId: Int!, comment: IComment!): Boolean
 }

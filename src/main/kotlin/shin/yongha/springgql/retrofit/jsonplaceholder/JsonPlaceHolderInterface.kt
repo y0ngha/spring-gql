@@ -10,12 +10,4 @@ interface JsonPlaceHolderInterface {
     fun getPosts(): Call<List<PostDTO>>
     @GET("/comments")
     fun getComments(): Call<List<CommentDTO>>
-//    @GET("/albums")
-//    fun getAlbums()
-//    @GET("/photos")
-//    fun getPhotos()
-//    @GET("/todos")
-//    fun getTodos()
-//    @GET("/users")
-//    fun getUsers()
 }

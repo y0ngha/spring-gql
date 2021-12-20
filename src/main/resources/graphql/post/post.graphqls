@@ -4,3 +4,9 @@ type Post {
     title: String!,
     body: String!,
 }
+
+input IPost {
+    userId: Int!,
+    title: String!,
+    body: String!,
+}
